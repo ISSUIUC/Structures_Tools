@@ -1,3 +1,10 @@
+"""
+XML Parsing Functionality
+
+OpenRocket (.ork) files are internally stored as xml files. We use the xmltodict
+library to read the xml file into a Python dict, which are far easier to work with.
+"""
+
 import xmltodict
 import pprint
 import unit_convert
