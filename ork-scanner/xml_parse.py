@@ -1,6 +1,6 @@
 import xmltodict
 import pprint
-
+import unit_convert
 
 inf = open("rocket.ork", 'r')
 print("\nOpened ork file...")
@@ -34,3 +34,12 @@ print('\t\tTip Chord: ' + str(float(fin_dict["tipchord"]) * 100) + 'cm')
 print("\t\tMaterial: " + fin_dict["material"]["#text"])
 
 print("\tSimulation Summary: ")
+for sim in xml_dict["openrocket"]["simulations"]["simulation"]:
+    try:
+        print("\t\tApogee: " + sim["flightdata"]["@maxaltitude"])
+        print("\t\tMax Velocity: " + sim["flightdata"]["@maxvelocity"])
+        print("\t\tMax Acceleration: " + sim["flightdata"]["@maxacceleration"])
+        print("\t\tFlight Time: " + sim["flightdata"]["@flighttime"])
+        print("\n")
+    except:
+        pass
