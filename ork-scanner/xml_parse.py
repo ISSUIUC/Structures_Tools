@@ -33,4 +33,4 @@ print('\t\tTip Chord: ' + str(float(fin_dict["tipchord"]) * 100) + 'cm')
 # print('\t\t')
 print("\t\tMaterial: " + fin_dict["material"]["#text"])
 
-print("/tSimulation Summary: ")
+print("\tSimulation Summary: ")
