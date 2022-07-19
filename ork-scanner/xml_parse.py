@@ -6,6 +6,7 @@ inf = open("rocket.ork", 'r')
 print("\nOpened ork file...")
 
 xml_string = inf.read()
+inf.close()
 print("Parsed xml file to a string...")
 
 xml_dict = xmltodict.parse(xml_string)
@@ -25,6 +26,11 @@ print("\t\tMaterial: " + nosecone_dict["material"]["#text"])
 
 fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][2]['subcomponents']['trapezoidfinset']
 print('\tFinset data:')
+print('\t\tFin count: ' + str(fin_dict["fincount"]))
+print('\t\tHeight: ' + str(float(fin_dict["height"]) * 100) + 'cm')
 print('\t\tRoot Chord: ' + str(float(fin_dict["rootchord"]) * 100) + 'cm')
 print('\t\tTip Chord: ' + str(float(fin_dict["tipchord"]) * 100) + 'cm')
-inf.close()
+# print('\t\t')
+print("\t\tMaterial: " + fin_dict["material"]["#text"])
+
+print("/tSimulation Summary: ")
