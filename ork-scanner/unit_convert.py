@@ -15,13 +15,13 @@ def metersToCm(meter_val):
     return round(meter_val * 100, 3)
 
 def kgsToLbs(kg_val):
-    pass
+    return round(kg_val * 2.20462, 3)
 
 def radToDeg(rad_val):
     pass
 
 def mpsToMach(mps_val):
-    pass
+    return round(mps_val/343, 3)
 
 
 # Add more as required
