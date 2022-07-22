@@ -7,5 +7,6 @@ which orks you want scanned
 
 from rocket_components import *
 
-rkt = Rocket()
-rkt.populateData("test_rockets/endurance.ork")
+rkt = Rocket('bruh', 'test_rockets/endurance.ork')
+print(rkt.nosecone.length)
+print(rkt.finset.material)

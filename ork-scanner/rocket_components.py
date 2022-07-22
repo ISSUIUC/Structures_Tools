@@ -9,22 +9,19 @@ way nicer.
 import xmltodict
 
 class Rocket:
-    def __init__(self, name):
+    def __init__(self, name, xml_filename):
         self.name = name
-    def populateData(self, xml_filename):
+        self.xml_filename = xml_filename
         in_file = open(xml_filename, 'r')
         xml_string = in_file.read()
         in_file.close()
         xml_dict = xmltodict.parse(xml_string)
 
-        # Populating nosecone data
+        # Populating data
         nosecone_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["nosecone"]
-        self.nosecone.length = float(nosecone_dict["length"])
-        self.nosecone.geometry = nosecone_dict["shape"]
-        self.nosecone.material = nosecone_dict["material"]["#text"]
-    def setNosecone():
-        pass
-    def
+        self.nosecone = Nosecone(float(nosecone_dict["length"]), nosecone_dict["shape"], nosecone_dict["material"]["#text"])
+        fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][2]['subcomponents']['trapezoidfinset']
+        self.finset = Finset(fin_dict["fincount"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]), fin_dict["material"]["#text"])
 
 class Nosecone:
     def __init__(self, length, geometry, material):
