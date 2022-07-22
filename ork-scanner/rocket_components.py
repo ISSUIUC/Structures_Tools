@@ -6,13 +6,25 @@ dictionary every time. Also makes dealing with multiple ork files at a time
 way nicer.
 """
 
+import xmltodict
+
 class Rocket:
-    def __init__(self, nosecone, finset, simulations, tube, recovery):
-        self.nosecone = nosecone
-        self.finset = finset
-        self.simulations = simulations
-        self.tube = tube
-        self.recovery = recovery
+    def __init__(self, name):
+        self.name = name
+    def populateData(self, xml_filename):
+        in_file = open(xml_filename, 'r')
+        xml_string = in_file.read()
+        in_file.close()
+        xml_dict = xmltodict.parse(xml_string)
+
+        # Populating nosecone data
+        nosecone_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["nosecone"]
+        self.nosecone.length = float(nosecone_dict["length"])
+        self.nosecone.geometry = nosecone_dict["shape"]
+        self.nosecone.material = nosecone_dict["material"]["#text"]
+    def setNosecone():
+        pass
+    def
 
 class Nosecone:
     def __init__(self, length, geometry, material):
@@ -36,7 +48,12 @@ class Simulation:
         self.flight_time = flight_time
 
 class BodyTube:
-    pass
+    def __init__(self, length, material, thickness):
+        self.length = length
+        self.material = material
+        self.thickness = thickness
 
 class RecoverySystem:
-    pass
+    def __init__(self, shockcord_length, chute_material):
+        self.shockcord_length = shockcord_length
+        self.chute_material = chute_material
