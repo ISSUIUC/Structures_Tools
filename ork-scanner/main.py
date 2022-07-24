@@ -10,3 +10,5 @@ from rocket_components import *
 rkt = Rocket('bruh', 'test_rockets/endurance.ork')
 print(rkt.nosecone.length)
 print(rkt.finset.material)
+for sim in rkt.sims:
+    print(sim)

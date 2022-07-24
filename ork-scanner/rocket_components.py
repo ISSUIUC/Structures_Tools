@@ -23,6 +23,14 @@ class Rocket:
         fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][2]['subcomponents']['trapezoidfinset']
         self.finset = Finset(fin_dict["fincount"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]), fin_dict["material"]["#text"])
 
+        sim_list = xml_dict["openrocket"]["simulations"]["simulation"]
+        self.sims = []
+        for sim in sim_list:
+            try:
+                self.sims.append(Simulation(sim["flightdata"]["@maxaltitude"], sim["flightdata"]["@maxvelocity"], sim["flightdata"]["@maxacceleration"], sim["flightdata"]["@flighttime"]))
+            except:
+                pass
+
 class Nosecone:
     def __init__(self, length, geometry, material):
         self.length = length
@@ -43,6 +51,8 @@ class Simulation:
         self.max_velocity = max_velocity
         self.max_acceleration = max_acceleration
         self.flight_time = flight_time
+    def __str__(self):
+        return "Apogee: " + str(self.apogee) + ",Max Velocity: " + str(self.max_velocity) + ",Max Acceleration: " + str(self.max_acceleration) + ",Flight Time: " + str(self.flight_time)
 
 class BodyTube:
     def __init__(self, length, material, thickness):
