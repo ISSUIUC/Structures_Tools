@@ -19,7 +19,9 @@ class Rocket:
 
         # Populating data
         nosecone_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["nosecone"]
-        self.nosecone = Nosecone(float(nosecone_dict["length"]), nosecone_dict["shape"], nosecone_dict["material"]["#text"])
+        self.nosecone = Nosecone(float(nosecone_dict["length"]),
+                                       nosecone_dict["shape"],
+                                       nosecone_dict["material"]["#text"])
         fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][2]['subcomponents']['trapezoidfinset']
         self.finset = Finset(fin_dict["fincount"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]), fin_dict["material"]["#text"])
 
@@ -27,7 +29,10 @@ class Rocket:
         self.sims = []
         for sim in sim_list:
             try:
-                self.sims.append(Simulation(sim["flightdata"]["@maxaltitude"], sim["flightdata"]["@maxvelocity"], sim["flightdata"]["@maxacceleration"], sim["flightdata"]["@flighttime"]))
+                self.sims.append(Simulation(sim["flightdata"]["@maxaltitude"],
+                                            sim["flightdata"]["@maxvelocity"],
+                                            sim["flightdata"]["@maxacceleration"],
+                                            sim["flightdata"]["@flighttime"]))
             except:
                 pass
 
