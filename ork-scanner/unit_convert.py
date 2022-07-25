@@ -2,8 +2,8 @@
 Unit Conversion Functions
 
 OpenRocket stores all values in S.I units under the hood. In ITR and ISS
-in general, we often speak in imperial units, so these conversions should
-come in handy.
+in general, we often speak in imperial units (massive L tbh), so these
+conversions should come in handy.
 """
 
 import math

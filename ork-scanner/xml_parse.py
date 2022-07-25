@@ -21,6 +21,13 @@ print("Parsed string into a dictionary...")
 
 pp = pprint.PrettyPrinter(indent=0)
 pp.pprint(xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"])
+print("\n BODY TOOBS \n")
+toobdict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
+
+for toob in toobdict:
+    print(toob)
+    print('\n')
+
 print('\n')
 print("--- ORK SCAN READY, MY LIEGE --- ")
 print('\n')
