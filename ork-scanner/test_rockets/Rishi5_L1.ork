@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.6" creator="OpenRocket 15.03">
+  <rocket>
+    <name>Roket</name>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Stage</name>
+        <overridecg>0.768640584522181</overridecg>
+        <overridesubcomponents>true</overridesubcomponents>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose cone</name>
+            <appearance>
+            <paint red="0" green="0" blue="0"/>
+            <shine>0.0</shine>
+            </appearance>
+            <overridemass>0.14174799999999999</overridemass>
+            <overridecg>0.0</overridecg>
+            <overridesubcomponents>false</overridesubcomponents>
+            <finish>polished</finish>
+            <material type="bulk" density="1049.21">Polystyrene PS</material>
+            <length>0.32512</length>
+            <thickness>0.003175</thickness>
+            <shape>ogive</shape>
+            <shapeparameter>1.0</shapeparameter>
+            <aftradius>0.0508</aftradius>
+            <aftshoulderradius>0.049276</aftshoulderradius>
+            <aftshoulderlength>0.09525</aftshoulderlength>
+            <aftshoulderthickness>0.003175</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+          </nosecone>
+
+          <bodytube>
+            <name>Body tube</name>
+            <appearance>
+            <paint red="0" green="0" blue="0"/>
+            <shine>0.0</shine>
+            </appearance>
+            <finish>normal</finish>
+            <material type="bulk" density="950.0">Kraft phenolic</material>
+            <length>0.3809999999999999</length>
+            <thickness>0.0012699999999999934</thickness>
+            <radius>0.0508</radius>
+          </bodytube>
+
+          <bodytube>
+            <name>Body tube</name>
+            <appearance>
+            <paint red="0" green="0" blue="0"/>
+            <shine>0.0</shine>
+            </appearance>
+            <finish>normal</finish>
+            <material type="bulk" density="950.0">Kraft phenolic</material>
+            <length>0.5841999999999999</length>
+            <thickness>0.0012699999999999934</thickness>
+            <radius>0.0508</radius>
+
+            <subcomponents>
+              <bulkhead>
+                <name>Coupler Bulkhead</name>
+                <position type="top">0.098425</position>
+                <material type="bulk" density="724.996">Aircraft plywood (LOC)</material>
+                <length>0.00599948</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.048641</outerradius>
+              </bulkhead>
+
+              <innertube>
+                <name>Body tube</name>
+                <position type="top">0.30480000000000007</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.2794</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.020828</outerradius>
+                <thickness>0.001524000000000001</thickness>
+                <clusterconfiguration>single</clusterconfiguration>
+                <clusterscale>1.0</clusterscale>
+                <clusterrotation>0.0</clusterrotation>
+              </innertube>
+
+              <freeformfinset>
+                <name>Fin set</name>
+                <appearance>
+                <paint red="0" green="0" blue="0"/>
+                <shine>0.0</shine>
+                </appearance>
+                <position type="top">0.41275</position>
+                <finish>polished</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <fincount>3</fincount>
+                <rotation>0.0</rotation>
+                <thickness>0.003175</thickness>
+                <crosssection>rounded</crosssection>
+                <cant>0.0</cant>
+                <tabheight>0.029972000000000002</tabheight>
+                <tablength>0.117475</tablength>
+                <tabposition relativeto="front">0.0381</tabposition>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
+                <finpoints>
+                  <point x="0.0" y="0.0"/>
+                  <point x="0.142875" y="0.10795"/>
+                  <point x="0.206375" y="0.10795"/>
+                  <point x="0.206375" y="0.03175"/>
+                  <point x="0.17145" y="0.0"/>
+                </finpoints>
+              </freeformfinset>
+
+              <tubecoupler>
+                <name>Tube coupler</name>
+                <position type="absolute">0.6095999999999999</position>
+                <material type="bulk" density="1121.29">Paper</material>
+                <length>0.2032</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.049530000000000005</outerradius>
+                <thickness>8.890000000000078E-4</thickness>
+              </tubecoupler>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="top">0.5683250000000001</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.006</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.049530000000000005</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="top">0.4445</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.00599948</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.049530000000000005</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="top">0.31115</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.00599948</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.049530000000000005</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <masscomponent>
+                <name>Shock Cord</name>
+                <position type="top">0.254</position>
+                <overridemass>0.10205801280000001</overridemass>
+                <overridecg>0.0</overridecg>
+                <overridesubcomponents>false</overridesubcomponents>
+                <packedlength>0.06096</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.10205801280000001</mass>
+                <masscomponenttype>masscomponent</masscomponenttype>
+              </masscomponent>
+
+              <parachute>
+                <name>Parachute</name>
+                <position type="top">0.127</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.04572</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>0.8</cd>
+                <material type="surface" density="5.688311261505548E-7">Rip stop nylon</material>
+                <deployevent>ejection</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.914001</diameter>
+                <linecount>8</linecount>
+                <linelength>0.914001</linelength>
+                <linematerial type="line" density="0.00102">1/16 In. braided nylon</linematerial>
+              </parachute>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+  </simulations>
+</openrocket>

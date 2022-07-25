@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.4" creator="OpenRocket 15.03">
+  <rocket>
+    <name>Rocket</name>
+    <motorconfiguration configid="0159acbd-f4c6-494f-aea5-ba6bf422e3a2" default="true"><name>[{motors} Chosen Motor]</name></motorconfiguration>
+    <motorconfiguration configid="6e0ad02c-c522-474c-bad9-2a487800ef76"/>
+    <motorconfiguration configid="124c8a9a-7fa5-4ac1-a317-a716b82ec40d"/>
+    <motorconfiguration configid="a9d333b8-d298-41b8-9b00-02871ff5a8bb"/>
+    <motorconfiguration configid="e371e74d-7cfa-478d-8a99-3c2bde6395b3"/>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+        <overridemass>1.74</overridemass>
+        <overridecg>0.48</overridecg>
+        <overridesubcomponents>true</overridesubcomponents>
+
+        <subcomponents>
+          <nosecone>
+            <name>3D printed nose cone</name>
+            <overridemass>0.302</overridemass>
+            <overridesubcomponents>false</overridesubcomponents>
+            <finish>unfinished</finish>
+            <material type="bulk" density="1300.0">PLA plastic</material>
+            <length>0.0508</length>
+            <thickness>0.00635</thickness>
+            <shape>ogive</shape>
+            <shapeparameter>1.0</shapeparameter>
+            <aftradius>0.0508</aftradius>
+            <aftshoulderradius>0.04953</aftshoulderradius>
+            <aftshoulderlength>0.1016</aftshoulderlength>
+            <aftshoulderthickness>0.00635</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+          </nosecone>
+
+          <bodytube>
+            <name>Payload tube (9&quot;)</name>
+            <finish>unfinished</finish>
+            <material type="bulk" density="876.0">Brown Kraft Paper</material>
+            <length>0.2286</length>
+            <thickness>0.0012700000000000003</thickness>
+            <radius>0.050800000000000005</radius>
+
+            <subcomponents>
+              <tubecoupler>
+                <name>Tube Coupler 3.90&quot; (98mm) Tube 8&quot; Longo</name>
+                <position type="bottom">0.1016</position>
+                <overridemass>0.0324</overridemass>
+                <overridesubcomponents>false</overridesubcomponents>
+                <material type="bulk" density="876.0">Brown Kraft Paper</material>
+                <length>0.2032</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.04935</outerradius>
+                <thickness>8.99999999999998E-4</thickness>
+
+                <subcomponents>
+                  <bulkhead>
+                    <name>Body Tube Bulkhead</name>
+                    <position type="top">-0.003175</position>
+                    <overridemass>0.016300000000000002</overridemass>
+                    <overridesubcomponents>false</overridesubcomponents>
+                    <material type="bulk" density="630.0">Plywood (birch)</material>
+                    <length>0.003175</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>0.049550000000000004</outerradius>
+                  </bulkhead>
+
+                  <bulkhead>
+                    <name>Coupler Bulkhead</name>
+                    <position type="top">0.0</position>
+                    <material type="bulk" density="630.0">Plywood (birch)</material>
+                    <length>0.003175</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>auto</outerradius>
+                  </bulkhead>
+
+                  <bulkhead>
+                    <name>Coupler Bulkhead</name>
+                    <position type="bottom">0.0</position>
+                    <material type="bulk" density="630.0">Plywood (birch)</material>
+                    <length>0.003175</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>auto</outerradius>
+                  </bulkhead>
+
+                  <bulkhead>
+                    <name>Body Tube Bulkhead</name>
+                    <position type="bottom">0.003175</position>
+                    <overridemass>0.016300000000000002</overridemass>
+                    <overridesubcomponents>false</overridesubcomponents>
+                    <material type="bulk" density="630.0">Plywood (birch)</material>
+                    <length>0.003175</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>0.049550000000000004</outerradius>
+                  </bulkhead>
+
+                  <masscomponent>
+                    <name>M5 Threaded rod</name>
+                    <position type="bottom">0.01</position>
+                    <packedlength>0.22</packedlength>
+                    <packedradius>0.0025</packedradius>
+                    <radialposition>0.03</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.07600612186462465</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+
+                  <masscomponent>
+                    <name>M5 Threaded rod</name>
+                    <position type="bottom">0.01</position>
+                    <packedlength>0.22</packedlength>
+                    <packedradius>0.0025</packedradius>
+                    <radialposition>0.03</radialposition>
+                    <radialdirection>180.0</radialdirection>
+                    <mass>0.07600612186462465</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+
+                  <masscomponent>
+                    <name>COTS Altimeter Sled </name>
+                    <position type="bottom">-0.003175</position>
+                    <packedlength>0.197</packedlength>
+                    <packedradius>0.045</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.15</mass>
+                    <masscomponenttype>altimeter</masscomponenttype>
+                  </masscomponent>
+
+                  <masscomponent>
+                    <name>Eye bolt</name>
+                    <position type="bottom">0.0254</position>
+                    <packedlength>0.02</packedlength>
+                    <packedradius>0.01</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.03</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+                </subcomponents>
+              </tubecoupler>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Booster tube extension (9&quot;)</name>
+            <finish>unfinished</finish>
+            <material type="bulk" density="876.0">Brown Kraft Paper</material>
+            <length>0.2286</length>
+            <thickness>0.0012499999999999942</thickness>
+            <radius>0.050800000000000005</radius>
+
+            <subcomponents>
+              <tubecoupler>
+                <name>Tube Coupler 3.90&quot; (98mm) Tube 8&quot; Long</name>
+                <position type="bottom">0.1016</position>
+                <overridemass>0.0324</overridemass>
+                <overridesubcomponents>false</overridesubcomponents>
+                <material type="bulk" density="876.0">Brown Kraft Paper</material>
+                <length>0.2032</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.04935</outerradius>
+                <thickness>8.99999999999998E-4</thickness>
+              </tubecoupler>
+
+              <parachute>
+                <name>36&quot; annular parachute</name>
+                <position type="middle">0.07</position>
+                <packedlength>0.07619999999999999</packedlength>
+                <packedradius>0.045</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>auto</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>altitude</deployevent>
+                <deployaltitude>121.92</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.9144</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.013">Tubular nylon (11 mm, 7/16 in)</linematerial>
+              </parachute>
+
+              <parachute>
+                <name>Parachute</name>
+                <position type="top">0.2413</position>
+                <packedlength>0.0508</packedlength>
+                <packedradius>0.044449999999999996</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>auto</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>ejection</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.4699</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <shockcord>
+                <name>Shock cord</name>
+                <position type="bottom">0.1216</position>
+                <packedlength>0.05</packedlength>
+                <packedradius>0.04</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>2.7432000000000003</cordlength>
+                <material type="line" density="0.016">Tubular nylon (14 mm, 9/16 in)</material>
+              </shockcord>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Booster tube (16&quot;)</name>
+            <comment>3.45 g / cm </comment>
+            <finish>unfinished</finish>
+            <material type="bulk" density="876.0">Brown Kraft Paper</material>
+            <length>0.4064</length>
+            <thickness>0.0012700000000000003</thickness>
+            <radius>auto</radius>
+
+            <subcomponents>
+              <freeformfinset>
+                <name>Freeform fin set</name>
+                <position type="bottom">0.0</position>
+                <overridemass>0.1465</overridemass>
+                <overridesubcomponents>false</overridesubcomponents>
+                <finish>unfinished</finish>
+                <material type="bulk" density="630.0">Plywood (birch)</material>
+                <fincount>3</fincount>
+                <rotation>0.0</rotation>
+                <thickness>0.003175</thickness>
+                <crosssection>square</crosssection>
+                <cant>0.0</cant>
+                <tabheight>0.030049999999999997</tabheight>
+                <tablength>0.191825</tablength>
+                <tabposition relativeto="end">-0.008174999999999988</tabposition>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="630.0">Plywood (birch)</filletmaterial>
+                <finpoints>
+                  <point x="0.0" y="0.0"/>
+                  <point x="0.14" y="0.12"/>
+                  <point x="0.19" y="0.12"/>
+                  <point x="0.2" y="0.0"/>
+                </finpoints>
+              </freeformfinset>
+
+              <innertube>
+                <name>Inner Tube (11&quot;)</name>
+                <position type="bottom">0.01</position>
+                <material type="bulk" density="950.0">Kraft phenolic</material>
+                <length>0.2794</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.02075</outerradius>
+                <thickness>0.0013999999999999985</thickness>
+                <clusterconfiguration>single</clusterconfiguration>
+                <clusterscale>1.0</clusterscale>
+                <clusterrotation>0.0</clusterrotation>
+                <motormount>
+                  <ignitionevent>automatic</ignitionevent>
+                  <ignitiondelay>0.0</ignitiondelay>
+                  <overhang>0.0</overhang>
+                  <motor configid="0159acbd-f4c6-494f-aea5-ba6bf422e3a2">
+                    <type>reload</type>
+                    <manufacturer>Cesaroni Technology</manufacturer>
+                    <digest>17c7b84130a5084ca9032954976ab3fb</digest>
+                    <designation>H143SS</designation>
+                    <diameter>0.038</diameter>
+                    <length>0.186</length>
+                    <delay>8.0</delay>
+                  </motor>
+                  <motor configid="6e0ad02c-c522-474c-bad9-2a487800ef76">
+                    <type>reload</type>
+                    <manufacturer>Cesaroni Technology</manufacturer>
+                    <digest>12eaa7889647b3c451c1efd7a9f76561</digest>
+                    <designation>H123</designation>
+                    <diameter>0.038</diameter>
+                    <length>0.186</length>
+                    <delay>9.0</delay>
+                  </motor>
+                  <motor configid="124c8a9a-7fa5-4ac1-a317-a716b82ec40d">
+                    <type>reload</type>
+                    <manufacturer>Cesaroni Technology</manufacturer>
+                    <digest>ace3745f12a3b82a68514e71b1faedc0</digest>
+                    <designation>H152BS</designation>
+                    <diameter>0.038</diameter>
+                    <length>0.186</length>
+                    <delay>8.0</delay>
+                  </motor>
+                  <motor configid="a9d333b8-d298-41b8-9b00-02871ff5a8bb">
+                    <type>reload</type>
+                    <manufacturer>Cesaroni Technology</manufacturer>
+                    <digest>2301be3330a9878e590ce0ee355e886b</digest>
+                    <designation>H125-Classic</designation>
+                    <diameter>0.038</diameter>
+                    <length>0.186</length>
+                    <delay>9.0</delay>
+                  </motor>
+                </motormount>
+
+                <subcomponents>
+                  <masscomponent>
+                    <name>Motor Retaintion Mechanism</name>
+                    <position type="bottom">0.015</position>
+                    <packedlength>0.025</packedlength>
+                    <packedradius>0.025</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.023</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+                </subcomponents>
+              </innertube>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.2</position>
+                <material type="bulk" density="630.0">Plywood (birch)</material>
+                <length>0.003175</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.005</position>
+                <material type="bulk" density="630.0">Plywood (birch)</material>
+                <length>0.003175</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <launchlug>
+                <name>&quot;Rail button&quot;</name>
+                <position type="top">0.14</position>
+                <finish>unfinished</finish>
+                <material type="bulk" density="1050.0">Polystyrene</material>
+                <radius>0.005</radius>
+                <length>0.01</length>
+                <thickness>0.001</thickness>
+                <radialdirection>-59.99999999999999</radialdirection>
+              </launchlug>
+
+              <launchlug>
+                <name>&quot;Rail button&quot;</name>
+                <position type="bottom">-0.02</position>
+                <finish>unfinished</finish>
+                <material type="bulk" density="1050.0">Polystyrene</material>
+                <radius>0.005</radius>
+                <length>0.01</length>
+                <thickness>0.001</thickness>
+                <radialdirection>-59.99999999999999</radialdirection>
+              </launchlug>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="uptodate">
+      <name>Launch at Dodds Park (8ft 1010 rail 15 mph wind)</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>0159acbd-f4c6-494f-aea5-ba6bf422e3a2</configid>
+        <launchrodlength>2.4384</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>6.7056</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>227.99040000000002</launchaltitude>
+        <launchlatitude>40.13</launchlatitude>
+        <launchlongitude>-88.3</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="386.17" maxvelocity="97.213" maxacceleration="68.849" maxmach="0.29018" timetoapogee="9.0579" flighttime="45.08" groundhitvelocity="6.7907" launchrodvelocity="16.721" deploymentvelocity="14.933">
+      </flightdata>
+    </simulation>
+
+    <simulation status="outdated">
+      <name>Launch at Dodds Park (8ft 1010 rail 15 mph wind)</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>6e0ad02c-c522-474c-bad9-2a487800ef76</configid>
+        <launchrodlength>2.4384</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>6.7056</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>227.99040000000002</launchaltitude>
+        <launchlatitude>40.13</launchlatitude>
+        <launchlongitude>-88.3</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="420.02" maxvelocity="107.63" maxacceleration="73.128" maxmach="0.32404" timetoapogee="9.2205" flighttime="48.985" groundhitvelocity="6.3895" launchrodvelocity="17.144" deploymentvelocity="13.999">
+        <warning>Recovery device deployment at high speed (68.9 ft/s)</warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="outdated">
+      <name>Simulation 1</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>124c8a9a-7fa5-4ac1-a317-a716b82ec40d</configid>
+        <launchrodlength>2.4384</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>6.7056</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>227.99040000000002</launchaltitude>
+        <launchlatitude>40.13</launchlatitude>
+        <launchlongitude>-88.3</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="539.56" maxvelocity="129.07" maxacceleration="111.19" maxmach="0.38536" timetoapogee="9.9564" flighttime="86.018" groundhitvelocity="7.0465" launchrodvelocity="20.933" deploymentvelocity="10.993">
+      </flightdata>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 2</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>e371e74d-7cfa-478d-8a99-3c2bde6395b3</configid>
+        <launchrodlength>2.4384</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>6.7056</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>227.99040000000002</launchaltitude>
+        <launchlatitude>40.13</launchlatitude>
+        <launchlongitude>-88.3</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+  </simulations>
+</openrocket>

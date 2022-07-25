@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.4" creator="OpenRocket 15.03">
+  <rocket>
+    <name>Rocket</name>
+    <motorconfiguration configid="d06780f9-bc30-46cf-b350-10cc029d2a92"/>
+    <motorconfiguration configid="2259b0eb-be2a-4d1b-a8bb-13abb5b91e6c"/>
+    <motorconfiguration configid="af579255-9c7e-4a68-8068-336bae84046a"/>
+    <motorconfiguration configid="91ace182-8a41-4df8-b2cb-fdc7471970a7"/>
+    <motorconfiguration configid="b22c7442-0f21-4f0f-b3df-57280ff517bc" default="true"/>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose cone</name>
+            <finish>normal</finish>
+            <material type="bulk" density="680.0">Cardboard</material>
+            <length>0.50292</length>
+            <thickness>0.002</thickness>
+            <shape>ogive</shape>
+            <shapeparameter>1.0</shapeparameter>
+            <aftradius>0.0508</aftradius>
+            <aftshoulderradius>0.04953</aftshoulderradius>
+            <aftshoulderlength>0.1016</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+          </nosecone>
+
+          <bodytube>
+            <name>Upper airframe</name>
+            <finish>normal</finish>
+            <material type="bulk" density="950.0">Kraft phenolic</material>
+            <length>0.4572</length>
+            <thickness>0.002</thickness>
+            <radius>auto</radius>
+
+            <subcomponents>
+              <tubecoupler>
+                <name>Tube coupler</name>
+                <position type="bottom">0.10668</position>
+                <material type="bulk" density="950.0">Kraft phenolic</material>
+                <length>0.2032</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <thickness>0.0</thickness>
+
+                <subcomponents>
+                  <bulkhead>
+                    <name>Coupler Bulkhead</name>
+                    <position type="bottom">-0.003175</position>
+                    <material type="bulk" density="680.0">Cardboard</material>
+                    <length>0.002</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>0.0488</outerradius>
+                  </bulkhead>
+
+                  <bulkhead>
+                    <name>Coupler Bulkhead</name>
+                    <position type="top">0.00318</position>
+                    <material type="bulk" density="680.0">Cardboard</material>
+                    <length>0.002</length>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <outerradius>0.049550000000000004</outerradius>
+                  </bulkhead>
+
+                  <masscomponent>
+                    <name>Altimeter</name>
+                    <position type="top">0.07619999999999999</position>
+                    <packedlength>0.04572</packedlength>
+                    <packedradius>0.019049999999999997</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.0</mass>
+                    <masscomponenttype>altimeter</masscomponenttype>
+                  </masscomponent>
+                </subcomponents>
+              </tubecoupler>
+
+              <launchlug>
+                <name>Camera Mount</name>
+                <position type="middle">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <radius>0.005</radius>
+                <length>0.03</length>
+                <thickness>0.001</thickness>
+                <radialdirection>0.0</radialdirection>
+              </launchlug>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Lower aiframe</name>
+            <finish>normal</finish>
+            <material type="bulk" density="950.0">Kraft phenolic</material>
+            <length>0.6095999999999999</length>
+            <thickness>0.002</thickness>
+            <radius>auto</radius>
+            <motormount>
+              <ignitionevent>automatic</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>0.0</overhang>
+            </motormount>
+
+            <subcomponents>
+              <innertube>
+                <name>Inner Tube</name>
+                <position type="bottom">0.0</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.1905</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.021589999999999998</outerradius>
+                <thickness>0.0012699999999999968</thickness>
+                <clusterconfiguration>single</clusterconfiguration>
+                <clusterscale>1.0</clusterscale>
+                <clusterrotation>0.0</clusterrotation>
+                <motormount>
+                  <ignitionevent>automatic</ignitionevent>
+                  <ignitiondelay>0.0</ignitiondelay>
+                  <overhang>0.0</overhang>
+                </motormount>
+              </innertube>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.15239999999999998</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.0127</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <parachute>
+                <name>Parachute</name>
+                <position type="top">0.18796</position>
+                <packedlength>0.0635</packedlength>
+                <packedradius>0.03175</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>auto</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>ejection</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.3</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <trapezoidfinset>
+                <name>Trapezoidal fin set</name>
+                <position type="bottom">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <fincount>4</fincount>
+                <rotation>0.0</rotation>
+                <thickness>0.003175</thickness>
+                <crosssection>square</crosssection>
+                <cant>0.0</cant>
+                <tabheight>0.02667</tabheight>
+                <tablength>0.13769999999999993</tablength>
+                <tabposition relativeto="center">0.018049999999999983</tabposition>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="680.0">Cardboard</filletmaterial>
+                <rootchord>0.2032</rootchord>
+                <tipchord>0.10922</tipchord>
+                <sweeplength>0.12108216500757173</sweeplength>
+                <height>0.11176</height>
+              </trapezoidfinset>
+
+              <shockcord>
+                <name>Shock cord</name>
+                <position type="top">0.2794</position>
+                <packedlength>0.04572</packedlength>
+                <packedradius>0.0254</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>0.4</cordlength>
+                <material type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</material>
+              </shockcord>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="cantrun">
+      <name>Simulation 1</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>d06780f9-bc30-46cf-b350-10cc029d2a92</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 2</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>d06780f9-bc30-46cf-b350-10cc029d2a92</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 3</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>2259b0eb-be2a-4d1b-a8bb-13abb5b91e6c</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 4</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>2259b0eb-be2a-4d1b-a8bb-13abb5b91e6c</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>-19.72419226096</windturbulence>
+        <launchaltitude>232.86720000000003</launchaltitude>
+        <launchlatitude>40.116329</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 5</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>af579255-9c7e-4a68-8068-336bae84046a</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 6</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>91ace182-8a41-4df8-b2cb-fdc7471970a7</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 7</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>2259b0eb-be2a-4d1b-a8bb-13abb5b91e6c</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 8</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>2259b0eb-be2a-4d1b-a8bb-13abb5b91e6c</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+
+    <simulation status="cantrun">
+      <name>Simulation 9</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>b22c7442-0f21-4f0f-b3df-57280ff517bc</configid>
+        <launchrodlength>1.8288000000000002</launchrodlength>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+    </simulation>
+  </simulations>
+</openrocket>

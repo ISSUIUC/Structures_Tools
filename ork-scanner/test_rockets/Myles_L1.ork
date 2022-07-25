@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.4" creator="OpenRocket 15.03">
+  <rocket>
+    <name>Rocket</name>
+    <motorconfiguration configid="962e35b6-9e07-4b0c-96c9-c03020ce5676" default="true"/>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose cone</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1390.0">PVC</material>
+            <length>0.2667</length>
+            <thickness>0.002</thickness>
+            <shape>haack</shape>
+            <shapeclipped>false</shapeclipped>
+            <shapeparameter>0.0</shapeparameter>
+            <aftradius>0.033401</aftradius>
+            <aftshoulderradius>0.032512</aftshoulderradius>
+            <aftshoulderlength>0.0508</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+
+            <subcomponents>
+              <masscomponent>
+                <name>AV</name>
+                <position type="top">0.18288</position>
+                <packedlength>0.07111999999999999</packedlength>
+                <packedradius>0.0254</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.1133980924</mass>
+                <masscomponenttype>masscomponent</masscomponenttype>
+              </masscomponent>
+
+              <masscomponent>
+                <name>Ballast 1</name>
+                <position type="top">0.15748</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.0</mass>
+                <masscomponenttype>masscomponent</masscomponenttype>
+              </masscomponent>
+
+              <bulkhead>
+                <name>Bulkhead</name>
+                <position type="bottom">0.00254</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.032512</outerradius>
+              </bulkhead>
+            </subcomponents>
+          </nosecone>
+
+          <bodytube>
+            <name>Body tube</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1300.0">Blue tube</material>
+            <length>0.254</length>
+            <thickness>8.890000000000009E-4</thickness>
+            <radius>0.033401</radius>
+
+            <subcomponents>
+              <parachute>
+                <name>Parachute</name>
+                <position type="top">0.05334</position>
+                <packedlength>0.08889999999999999</packedlength>
+                <packedradius>0.0254</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>auto</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>altitude</deployevent>
+                <deployaltitude>60.96</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.9144</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <shockcord>
+                <name>Shock cord</name>
+                <position type="top">0.00254</position>
+                <packedlength>0.0508</packedlength>
+                <packedradius>0.019049999999999997</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>0.4</cordlength>
+                <material type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</material>
+              </shockcord>
+
+              <tubecoupler>
+                <name>Tube coupler</name>
+                <position type="bottom">0.0508</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.1016</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.032512</outerradius>
+                <thickness>0.0012700000000000003</thickness>
+
+                <subcomponents>
+                  <masscomponent>
+                    <name>Ballast 2</name>
+                    <position type="top">0.038099999999999995</position>
+                    <packedlength>0.025</packedlength>
+                    <packedradius>0.0125</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.3401942772</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+
+                  <masscomponent>
+                    <name>Camera</name>
+                    <position type="top">0.0</position>
+                    <packedlength>0.025</packedlength>
+                    <packedradius>0.0125</packedradius>
+                    <radialposition>0.0</radialposition>
+                    <radialdirection>0.0</radialdirection>
+                    <mass>0.283495231</mass>
+                    <masscomponenttype>masscomponent</masscomponenttype>
+                  </masscomponent>
+                </subcomponents>
+              </tubecoupler>
+
+              <bulkhead>
+                <name>Bulkhead</name>
+                <position type="bottom">-0.0508</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+
+              <launchlug>
+                <name>Launch lug</name>
+                <position type="middle">0.14731999999999998</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <radius>0.005</radius>
+                <length>0.03</length>
+                <thickness>0.001</thickness>
+                <radialdirection>59.99999999999999</radialdirection>
+              </launchlug>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Body tube</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1300.0">Blue tube</material>
+            <length>0.43179999999999996</length>
+            <thickness>8.890000000000009E-4</thickness>
+            <radius>0.033401</radius>
+
+            <subcomponents>
+              <shockcord>
+                <name>Shock cord</name>
+                <position type="top">0.05334</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>0.4</cordlength>
+                <material type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</material>
+              </shockcord>
+
+              <parachute>
+                <name>Parachute</name>
+                <position type="top">0.07874</position>
+                <packedlength>0.1016</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>auto</cd>
+                <material type="surface" density="0.067">Ripstop nylon</material>
+                <deployevent>ejection</deployevent>
+                <deployaltitude>200.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>0.4699</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <launchlug>
+                <name>Launch lug</name>
+                <position type="middle">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <radius>0.005</radius>
+                <length>0.03</length>
+                <thickness>0.001</thickness>
+                <radialdirection>59.99999999999999</radialdirection>
+              </launchlug>
+
+              <bulkhead>
+                <name>Bulkhead</name>
+                <position type="bottom">-0.37846</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+
+              <innertube>
+                <name>Inner Tube</name>
+                <position type="bottom">0.0</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.185928</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.02032</outerradius>
+                <thickness>0.001270000000000002</thickness>
+                <clusterconfiguration>single</clusterconfiguration>
+                <clusterscale>1.0</clusterscale>
+                <clusterrotation>0.0</clusterrotation>
+                <motormount>
+                  <ignitionevent>automatic</ignitionevent>
+                  <ignitiondelay>0.0</ignitiondelay>
+                  <overhang>0.0</overhang>
+                  <motor configid="962e35b6-9e07-4b0c-96c9-c03020ce5676">
+                    <type>reload</type>
+                    <manufacturer>Cesaroni Technology</manufacturer>
+                    <digest>17c7b84130a5084ca9032954976ab3fb</digest>
+                    <designation>H143SS</designation>
+                    <diameter>0.038</diameter>
+                    <length>0.186</length>
+                    <delay>10.0</delay>
+                  </motor>
+                </motormount>
+              </innertube>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.0254</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <centeringring>
+                <name>Centering ring</name>
+                <position type="bottom">-0.127</position>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <length>0.002</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <innerradius>auto</innerradius>
+              </centeringring>
+
+              <trapezoidfinset>
+                <name>Trapezoidal fin set</name>
+                <position type="bottom">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="680.0">Cardboard</material>
+                <fincount>3</fincount>
+                <rotation>0.0</rotation>
+                <thickness>0.003</thickness>
+                <crosssection>rounded</crosssection>
+                <cant>0.0</cant>
+                <tabheight>0.007619999999999998</tabheight>
+                <tablength>0.09960000000000002</tablength>
+                <tabposition relativeto="center">-0.01369999999999999</tabposition>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="630.0">Plywood (birch)</filletmaterial>
+                <rootchord>0.127</rootchord>
+                <tipchord>0.0508</tipchord>
+                <sweeplength>0.09068739842812426</sweeplength>
+                <height>0.0508</height>
+              </trapezoidfinset>
+            </subcomponents>
+          </bodytube>
+
+          <transition>
+            <name>Transition</name>
+            <finish>normal</finish>
+            <material type="bulk" density="1300.0">Blue tube</material>
+            <length>0.038099999999999995</length>
+            <thickness>0.002</thickness>
+            <shape>conical</shape>
+            <foreradius>auto</foreradius>
+            <aftradius>0.022224999999999998</aftradius>
+            <foreshoulderradius>0.0</foreshoulderradius>
+            <foreshoulderlength>0.0</foreshoulderlength>
+            <foreshoulderthickness>0.0</foreshoulderthickness>
+            <foreshouldercapped>false</foreshouldercapped>
+            <aftshoulderradius>0.0</aftshoulderradius>
+            <aftshoulderlength>0.0</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+          </transition>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="uptodate">
+      <name>Simulation 1</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>962e35b6-9e07-4b0c-96c9-c03020ce5676</configid>
+        <launchrodlength>1.8288</launchrodlength>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>4.4704</windaverage>
+        <windturbulence>0.0</windturbulence>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+      </conditions>
+      <flightdata maxaltitude="786.43" maxvelocity="146.24" maxacceleration="101.72" maxmach="0.43093" timetoapogee="12.388" flighttime="81.65" groundhitvelocity="5.5763" launchrodvelocity="17.105" deploymentvelocity="12.235">
+      </flightdata>
+    </simulation>
+  </simulations>
+</openrocket>

@@ -22,7 +22,7 @@ class Rocket:
         self.nosecone = Nosecone(float(nosecone_dict["length"]),
                                        nosecone_dict["shape"],
                                        nosecone_dict["material"]["#text"])
-        fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][2]['subcomponents']['trapezoidfinset']
+        fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][1]['subcomponents']['trapezoidfinset']
         self.finset = Finset(fin_dict["fincount"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]), fin_dict["material"]["#text"])
 
         sim_list = xml_dict["openrocket"]["simulations"]["simulation"]
