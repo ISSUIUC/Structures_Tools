@@ -9,7 +9,7 @@ import xmltodict
 import pprint
 import unit_convert
 
-inf = open("test_rockets/Rishi5_L1.ork", 'r')
+inf = open("test_rockets/endurance.ork", 'r')
 print("\nOpened ork file...")
 
 xml_string = inf.read()

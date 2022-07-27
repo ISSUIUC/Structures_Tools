@@ -41,7 +41,9 @@ class Rocket:
                 pass
 
         tube_list = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
+        self.tubes = []
         for tube in tube_list:
+            self.tubes.append(BodyTube(tube['name'],float(tube['length']), tube['material']['#text'], float(tube['thickness'])))
             try:
                 fin_dict = tube['subcomponents']['trapezoidfinset']
                 self.finset = Finset('trapezoid', fin_dict["fincount"], fin_dict["material"]["#text"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]))
@@ -84,12 +86,13 @@ class Simulation:
         return f"Simulation - Apogee:{self.apogee},Max Velocity:{self.max_velocity},Max Acceleration:{self.max_acceleration}"
 
 class BodyTube:
-    def __init__(self, length, material, thickness):
+    def __init__(self, name, length, material, thickness):
+        self.name = name
         self.length = length
         self.material = material
         self.thickness = thickness
     def __str__(self):
-        return f"Bodytube - Length:{self.length},Material:{self.material},Thickness:{self.thickness}"
+        return f"{self.name} - Length:{self.length},Material:{self.material},Thickness:{self.thickness}"
 
 class RecoverySystem:
     def __init__(self, shockcord_length, chute_material):
