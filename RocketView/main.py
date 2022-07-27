@@ -5,9 +5,9 @@ This is the file that should actually be run. Edit filepaths to specify
 which orks you want scanned
 """
 
-from rocket_components import *
+from rocket import *
 
-rkt = Rocket('bruh', 'test_rockets/Navya_L1.ork')
+rkt = Rocket('bruh', 'test_rockets/endurance.ork')
 print("nosecone len " + str(rkt.nosecone.length))
 print("nosecone material " + rkt.nosecone.material)
 print("nosecone geometry: " + rkt.nosecone.geometry)
