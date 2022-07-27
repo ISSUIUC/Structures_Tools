@@ -40,21 +40,37 @@ class Rocket:
                 print("unparsable sim")
                 pass
 
-        tube_list = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
+        tube_collection = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
         self.tubes = []
-        for tube in tube_list:
-            self.tubes.append(BodyTube(tube['name'],float(tube['length']), tube['material']['#text'], float(tube['thickness'])))
+        if isinstance(tube_collection, list):
+            for tube in tube_collection:
+                self.tubes.append(BodyTube(tube['name'],float(tube['length']), tube['material']['#text'], float(tube['thickness'])))
+                try:
+                    fin_dict = tube['subcomponents']['trapezoidfinset']
+                    self.finset = Finset('trapezoid', fin_dict["fincount"], fin_dict["material"]["#text"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]))
+                except:
+                    print("this tube has no trapezoid fins")
+
+                try:
+                    fin_dict = tube['subcomponents']['freeformfinset']
+                    self.finset = Finset("freeform", fin_dict['fincount'],fin_dict['material']['#text'])
+                except:
+                    print('this tube has no freeform fins')
+        else:
+            self.tubes.append(BodyTube(tube_collection['name'],float(tube_collection['length']), tube_collection['material']['#text'], float(tube_collection['thickness'])))
             try:
-                fin_dict = tube['subcomponents']['trapezoidfinset']
+                fin_dict = tube_collection['subcomponents']['trapezoidfinset']
                 self.finset = Finset('trapezoid', fin_dict["fincount"], fin_dict["material"]["#text"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]))
             except:
                 print("this tube has no trapezoid fins")
 
             try:
-                fin_dict = tube['subcomponents']['freeformfinset']
+                fin_dict = tube_collection['subcomponents']['freeformfinset']
                 self.finset = Finset("freeform", fin_dict['fincount'],fin_dict['material']['#text'])
             except:
                 print('this tube has no freeform fins')
+
+
 
 
 class Nosecone:
