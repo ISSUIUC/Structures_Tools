@@ -35,7 +35,10 @@ class Rocket:
                                             sim["flightdata"]["@flighttime"]))
             except:
                 pass
+        tube_list = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
         self.tubes = []
+        for tube in tube_list:
+            
 
 class Nosecone:
     def __init__(self, length, geometry, material):
