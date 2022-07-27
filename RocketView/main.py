@@ -7,10 +7,13 @@ which orks you want scanned
 
 from rocket_components import *
 
-rkt = Rocket('bruh', 'test_rockets/Gautam_L1_June.ork')
+rkt = Rocket('bruh', 'test_rockets/Rishi5_L1.ork')
 print("nosecone len " + str(rkt.nosecone.length))
-print("fin material " + str(rkt.finset.material))
-print("fin root chord: " + str(rkt.finset.root_chord))
-print("fin tip chord: "+ str(rkt.finset.tip_chord))
+print("nosecone material " + rkt.nosecone.material)
+print("nosecone geometry: " + rkt.nosecone.geometry)
+print("fin material " + rkt.finset.material)
+print("fin type: " + rkt.finset.type)
+print("fin count: " + str(rkt.finset.fin_count))
 for sim in rkt.sims:
     print(sim)
+    print('\n')

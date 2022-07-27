@@ -18,15 +18,18 @@ class Rocket:
         xml_dict = xmltodict.parse(xml_string)
 
         # Populating data
+
         nosecone_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["nosecone"]
         self.nosecone = Nosecone(float(nosecone_dict["length"]),
                                        nosecone_dict["shape"],
                                        nosecone_dict["material"]["#text"])
-        fin_dict = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"][1]['subcomponents']['trapezoidfinset']
-        self.finset = Finset(fin_dict["fincount"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]), fin_dict["material"]["#text"])
-
-        sim_list = xml_dict["openrocket"]["simulations"]["simulation"]
         self.sims = []
+        sim_list = []
+        try:
+            sim_list = xml_dict["openrocket"]["simulations"]["simulation"]
+        except:
+            print('no sims')
+
         for sim in sim_list:
             try:
                 self.sims.append(Simulation(sim["flightdata"]["@maxaltitude"],
@@ -34,11 +37,23 @@ class Rocket:
                                             sim["flightdata"]["@maxacceleration"],
                                             sim["flightdata"]["@flighttime"]))
             except:
+                print("unparsable sim")
                 pass
+
         tube_list = xml_dict["openrocket"]["rocket"]["subcomponents"]["stage"]["subcomponents"]["bodytube"]
-        self.tubes = []
         for tube in tube_list:
-            
+            try:
+                fin_dict = tube['subcomponents']['trapezoidfinset']
+                self.finset = Finset('trapezoid', fin_dict["fincount"], fin_dict["material"]["#text"], float(fin_dict["height"]), float(fin_dict["rootchord"]), float(fin_dict["tipchord"]))
+            except:
+                print("this tube has no trapezoid fins")
+
+            try:
+                fin_dict = tube['subcomponents']['freeformfinset']
+                self.finset = Finset("freeform", fin_dict['fincount'],fin_dict['material']['#text'])
+            except:
+                print('this tube has no freeform fins')
+
 
 class Nosecone:
     def __init__(self, length, geometry, material):
@@ -49,14 +64,15 @@ class Nosecone:
         return f"Nosecone - Length:{self.length},Geometry:{self.geometry},Material:{self.material}"
 
 class Finset:
-    def __init__(self, fin_count, height, root_chord, tip_chord, material):
+    def __init__(self, type, fin_count, material, height=None, root_chord=None, tip_chord=None):
+        self.type = type
         self.fin_count = fin_count
         self.height = height
         self.root_chord = root_chord
         self.tip_chord = tip_chord
         self.material = material
     def __str__(self):
-        return f"Finset - Fin Count:{self.fin_count},Height:{self.height},Root Chord:{self.root_chord},"
+        return f"Finset - Fin Count:{self.fin_count},Type:{self.type},Material:{self.material}"
 
 class Simulation:
     def __init__(self, apogee, max_velocity, max_acceleration, flight_time):
